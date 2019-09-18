@@ -55,6 +55,7 @@ df.head()
 ```
 
 Output:
+
 ![Output](./outputs/output1.png)
 
 We can also get a quick summary of the dataset.
@@ -64,6 +65,7 @@ df.info()
 ```
 
 Output:
+
 ![Output](./outputs/output2.png)
 
 We can also generate a statistical summary of all the numerical columns in our dataset.
@@ -74,6 +76,7 @@ df.describe()
 ```
 
 Output:
+
 ![Output](./outputs/output3.png)
 
 ## Missing Data
@@ -107,6 +110,7 @@ df.info()
 After dropping the column, 'Cabin', with more than 50% NaN values and filling in the missing values of the 'Age' and 'Embarked' columns, we get the new dataset summarized below.
 
 Output:
+
 ![Output](./outputs/output4.png)
 
 Missing values can also be filled using the scikit-learn preprocessing library and the Imputer class on NumPy arrays.
@@ -135,6 +139,7 @@ df.info()
 ```
 
 Output:
+
 ![Output](./outputs/output6.png)
 ![Output](./outputs/output7.png)
 
@@ -185,6 +190,7 @@ pd.get_dummies(df).head()
 ```
 
 Output:
+
 ![Output](./outputs/output5.png)
 
 Using LabelEncoder and OneHotEncoder we can transform and create dummy variables of our categorical data.
@@ -211,6 +217,7 @@ plt.scatter(y=df.values[:,-1], x=df.values[:,1])
 ```
 
 Output:
+
 ![Output](./outputs/output8.png)
 
 We can see that there is a nonlinear relationship between the feature and the target. Using polynomial features, we can find the polynomial degree that best represent this relationship.
@@ -247,6 +254,7 @@ plt.legend()
 ```
 
 Output:
+
 ![Output](./outputs/output9.png)
 
 ## Feature Scaling
